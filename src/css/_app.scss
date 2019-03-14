@@ -1,7 +1,10 @@
 $primary: black;
-$secondary: red;
 $transition: all .5s cubic-bezier(.87, -.41, .19, 1);
-$mainColor: green;
+
+$mainColor: #707070;
+$secondary: #e75a7c;
+
+
 
 /* Breakpoints */
 $phone: 600px;
@@ -10,7 +13,7 @@ $laptop: 1260px;
 $desktop: 1400px;
 
 /* Mobile nav breakpoint */
-$mobile: 991px;
+$mobile: 800px;
 
 /* Define with of layout to recalculate vw */
 $projectWidth: 1920px;

@@ -8,35 +8,28 @@ get_header(); ?>
 
 <div class="grid">
 	<div class="row">
-		<H1>HOME</H1>
 
-<section class="slider slideshow-container">
-	<div class="">
+<section class="slider">
 	<?php
 		if( have_rows('home_slider') ):
 		while ( have_rows('home_slider') ) : the_row(); 
 
 	?>	
 	
-	<div class="slider__single_element mySlides fade">
-			<a href="<?php echo the_sub_field('home_curiosities_link'); ?>">
-        
-				<div class="xd" style="background-image: url('<?php echo the_sub_field('home_curiosities_picture'); ?>');">
-
-
-					<h2><?php echo the_sub_field('home_curiosities_title'); ?></h2>
-				</div>
-
-			</a>
+	<div class="slider__single_element slieds fade" >
+		<a href="<?php echo the_sub_field('home_curiosities_link'); ?>">
+			<div class="slider__single_element--picture" style="background-image: url('<?php echo the_sub_field('home_curiosities_picture'); ?>');">
+				<h2 class="slider__single_element--title"><?php echo the_sub_field('home_curiosities_title'); ?></h2>
+			</div>
+		</a>
 	</div>
 		
 	<?php endwhile; endif;?>
-	<div style="text-align:center">
+	<div class="slider__dots" style="text-align:center">
 		<span class="dot"></span> 
 		<span class="dot"></span> 
 		<span class="dot"></span> 
 	</div>
-</div>
 </section>
 		
 

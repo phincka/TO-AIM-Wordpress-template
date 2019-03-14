@@ -2,7 +2,7 @@
 	margin: 0 auto;
 
 	@include media($desktop, max) {
-		width: calc(100% - 80px);
+		width: calc(100% - 20px);
 	}
 
 	@include media($phone, max) {

@@ -8,39 +8,44 @@
 	}
 	.header {
 		width: 100%;
-		height: 110px;
-		background-color: #fff;
-		position: sticky;
+//		position: sticky;
 		top: 0;
+		
 			&__branding{
-				width: 40px;
-				margin: 40px 0 0 15%;
-				float: left;
+				width: 350px;
+				display: block;
+				margin: 0 auto;
+				padding: 20px 0 20px 0;
 			}
 			&__nav{
-				float: right;
-				margin: 51px 15% 0 0;
-					ul	{
+				text-align: center;
+				padding-bottom: 40px;
+					ul{
 						display: inline-flex;
-						color: gray;
-						font-size: 1rem;
 							li{
 								margin-left: 40px;
+								color: $mainColor;
+								font-size: 1.3rem;
+								font-weight: 700;
+									&:first-child{
+										margin-left: 0;
+									}
 									&:hover{
-										color: black;
-										text-decoration: underline;
+										color: #7c7c7c;
 									}
 									a{
-										text-transform: uppercase;
+										display: block;
 									}
 							}
 					}
 			}
 	}
 	.sidebar{
+		display: none;
+
 		position: absolute;
-		right: 0;
-		top: 1600px;
+		right: 40px;
+		top: 600px;
 		width: 300px;
 		
 		height: 100vh;
@@ -50,25 +55,28 @@
 @media screen and (max-width: $mobile) {
 	.header{
 		width: 100%;
-		height: 80px;
+		height: 250px;
 		position: sticky;
 		top: 0;
 		background-color: #fff;
     }
 	.header__branding{
-		float: left;
-		margin: 10px 0 0 10px;
+		display: block;
+		@include center();
+			img{
+				width: 200px;
+			}
 	}
 	.menu__toggle {
 		$size: 40px;
 		width: $size;
 		height: $size;
 		z-index: 100;
-		position: relative;
+		position: absolute;
 		cursor: pointer;
 		float: right;
-		top: 30px;
-		right: 10px;
+		top: 40px;
+		right: 40px;
 		svg {
 			position: absolute;
 			right: -15%;
@@ -77,7 +85,7 @@
 		}
 		path {
 			fill: none;
-			stroke: black;
+			stroke: #707070;
 			stroke-width: 3;
 			stroke-linecap: round;
 			stroke-linejoin: round;
@@ -103,7 +111,7 @@
 		left: 0;
 		width: 100vw;
 		height: 100vh;
-		background: grey;
+		background: #fff;
 		transition: $transition;
 		transform: translateX(-110vw);
 		li {
@@ -114,7 +122,7 @@
 			a {
 				font-size: 2rem;
 				text-transform: uppercase;
-				color: green
+				color: $secondary;
 			}
 		}
 	}
@@ -151,5 +159,7 @@
 				margin: 25px 0 0 20px;
 		}
 	}
-
+	.sidebar{
+			display: none;
+	}
 }

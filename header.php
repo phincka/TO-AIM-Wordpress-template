@@ -24,9 +24,7 @@
 
 	<link rel="shortcut icon" href="<?php asset('img/aim-logo.png'); ?>">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<!-- wp -->
 	<?php wp_head(); ?>
 	<!-- wp -->

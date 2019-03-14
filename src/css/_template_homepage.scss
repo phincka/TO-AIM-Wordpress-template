@@ -17,24 +17,83 @@ h1{
 
 }
 .slider{
-
+  width: 100%;
     &__single_element{
-        .xd{
+        width: 100%; 
+        position: relative; 
+        z-index: -1;
+        &--picture{
             width: 100%;
             height: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            padding-top: 24.5%;
+        }
+        &--title{
+          width: 40%;
+          padding: 15px 20px;
+          background-color: $secondary;
+          font-size: 1.5rem;
+          color: #fff;
+            &::first-letter{
+              margin-left: 5px;
+              font-size: 1.6rem;
+              font-weight: bold;
+            }
         }
     }
+    &__dots{
+      text-align: center;
+      float: right;
+      margin: -30px 20px 0 0;
+        .dot{
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+          background-color: red;     
+          display: inline-block;
+          transition: background-color 0.6s ease;
+          margin-right: 5px;
+        }
+        .active {
+          width: 28px;
+          height: 10px;
+          border-radius: 10px;
+          background-color: #4aee34;
+        }
+
+
 }
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
 }
 
-.active {
-  background-color: #717171;
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+  
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.posts{
+  margin-top: 100px;
+    .single_post{
+      background-color: antiquewhite;
+      margin-bottom: 20px;
+        &:first-child{
+          width: 75%;
+        }
+    }
 }
