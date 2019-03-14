@@ -1,0 +1,129 @@
+:focus,
+:active {
+	outline: none;
+}
+
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+img,
+article,
+main,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block
+}
+
+img {
+	max-width: 100%;
+}
+
+main {
+	overflow: hidden;
+}
+
+
+ol,
+ul {
+	list-style: none
+}
+
+button {
+	background: transparent;
+}
+
+li:empty,
+p:empty {
+	display: none;
+}
+
+textarea,
+select,
+input,
+button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	color: inherit;
+	cursor: pointer;
+	background: transparent;
+}
+
+strong {
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* wp */
+
+html {
+	margin-top: 0 !important;
+}
+
+#wpadminbar {
+	opacity: 0.3;
+}
+
+#wpadminbar:hover {
+	opacity: 1;
+}
+
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
+
+.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

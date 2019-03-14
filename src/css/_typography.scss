@@ -1,0 +1,26 @@
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700&subset=latin-ext');
+
+html {
+	font-size: 1rem;
+}
+
+body {
+	color: $primary;
+	// font-family: 'Roboto', sans-serif;
+}
+
+
+.text {
+
+	p,
+	li {
+		padding-bottom: 30px;
+	}
+}
+
+a,
+button,
+input {
+	transition: $transition;
+	cursor: pointer;
+}

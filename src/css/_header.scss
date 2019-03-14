@@ -1,0 +1,155 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+@media screen and (min-width: $mobile) {
+	.menu__toggle {
+		display: none;
+	}
+	.header {
+		width: 100%;
+		height: 110px;
+		background-color: #fff;
+		position: sticky;
+		top: 0;
+			&__branding{
+				width: 40px;
+				margin: 40px 0 0 15%;
+				float: left;
+			}
+			&__nav{
+				float: right;
+				margin: 51px 15% 0 0;
+					ul	{
+						display: inline-flex;
+						color: gray;
+						font-size: 1rem;
+							li{
+								margin-left: 40px;
+									&:hover{
+										color: black;
+										text-decoration: underline;
+									}
+									a{
+										text-transform: uppercase;
+									}
+							}
+					}
+			}
+	}
+	.sidebar{
+		position: absolute;
+		right: 0;
+		top: 1600px;
+		width: 300px;
+		
+		height: 100vh;
+		background-color: aquamarine;
+	}
+}
+@media screen and (max-width: $mobile) {
+	.header{
+		width: 100%;
+		height: 80px;
+		position: sticky;
+		top: 0;
+		background-color: #fff;
+    }
+	.header__branding{
+		float: left;
+		margin: 10px 0 0 10px;
+	}
+	.menu__toggle {
+		$size: 40px;
+		width: $size;
+		height: $size;
+		z-index: 100;
+		position: relative;
+		cursor: pointer;
+		float: right;
+		top: 30px;
+		right: 10px;
+		svg {
+			position: absolute;
+			right: -15%;
+			height: 100%;
+			transform-origin: top right;
+		}
+		path {
+			fill: none;
+			stroke: black;
+			stroke-width: 3;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			--length: 24;
+			--offset: -38;
+			stroke-dasharray: var(--length) var(--total-length);
+			stroke-dashoffset: var(--offset);
+			transition: $transition;
+			&:nth-child(1),
+			&:nth-child(3) {
+				--total-length: 126.64183044433594;
+			}
+			&:nth-child(2) {
+				--total-length: 70;
+			}
+		}
+	}
+	.menu {
+		@include center();
+		flex-direction: column;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: grey;
+		transition: $transition;
+		transform: translateX(-110vw);
+		li {
+			transition: $transition;
+			transform: translateX(-50px);
+			opacity: 0;
+			margin: 10px 0;
+			a {
+				font-size: 2rem;
+				text-transform: uppercase;
+				color: green
+			}
+		}
+	}
+	.header--toggled {
+		transform: translateY(0);
+		.menu {
+			&__toggle {
+				path {
+					stroke: $mainColor;
+
+					&:nth-child(1),
+					&:nth-child(3) {
+						--length: 22.627416998;
+						--offset: -94.1149185097;
+					}
+
+					&:nth-child(2) {
+						--length: 0;
+						--offset: -50;
+					}
+				}
+			}
+			transform: translateX(0vh);
+
+			li {
+				transition-delay: 0.3s;
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+	}
+	.header{
+			&__branding img{
+				margin: 25px 0 0 20px;
+		}
+	}
+
+}

@@ -1,0 +1,23 @@
+.grid {
+	margin: 0 auto;
+
+	@include media($desktop, max) {
+		width: calc(100% - 80px);
+	}
+
+	@include media($phone, max) {
+		width: calc(100% - 40px);
+	}
+
+	@include media($desktop, min) {
+		width: $gridWidth;
+	}
+}
+
+.col {
+	@for $i from 1 to 12 {
+		&--#{$i} {
+			@include col(#{$i});
+		}
+	}
+}

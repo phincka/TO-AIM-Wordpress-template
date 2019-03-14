@@ -1,0 +1,27 @@
+$primary: black;
+$secondary: red;
+$transition: all .5s cubic-bezier(.87, -.41, .19, 1);
+$mainColor: green;
+
+/* Breakpoints */
+$phone: 600px;
+$tablet: 769px;
+$laptop: 1260px;
+$desktop: 1400px;
+
+/* Mobile nav breakpoint */
+$mobile: 991px;
+
+/* Define with of layout to recalculate vw */
+$projectWidth: 1920px;
+$gridWidth: 1280px;
+
+
+/* Libraries */
+@import 'lib/reset';
+@import 'lib/helpers';
+@import 'lib/grid';
+@import 'lib/owl';
+// @import 'lib/owlFade';
+// @import 'lib/aoe';
+// @import 'lib/fancybox';
