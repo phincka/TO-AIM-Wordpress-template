@@ -73,7 +73,5 @@
 
 		</div>
 	</header>
-    <section class="sidebar">
-        <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar(1)): ?><h5>Brak widgetu.</h5><?php endif;?>                            
-    </section>
+
 	<main class="main">

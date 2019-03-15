@@ -40,17 +40,6 @@
 					}
 			}
 	}
-	.sidebar{
-		display: none;
-
-		position: absolute;
-		right: 40px;
-		top: 600px;
-		width: 300px;
-		
-		height: 100vh;
-		background-color: aquamarine;
-	}
 }
 @media screen and (max-width: $mobile) {
 	.header{

@@ -1,21 +1,4 @@
-h1{
-    color: red;
-}
-.single_post{
-    width: 50%;
-        &__main_picture{
-            width: 500px;
-            height: 200px;
-               img{
-                  width: 100%;
-                    height: 100%;
-                }
-        }
-        &__content{
-            display: none;
-        }
 
-}
 .slider{
   width: 100%;
     &__single_element{
@@ -86,14 +69,69 @@ h1{
   to {opacity: 1}
 }
 
-
+.sidebar{
+	//	display: none;
+  width: 25%;
+  float: right;
+  height: 100vh;
+	background-color: aquamarine;
+}
 .posts{
+  width: 70%;
   margin-top: 100px;
     .single_post{
-      background-color: antiquewhite;
-      margin-bottom: 20px;
+      width: 45%;
+      display: inline-block;
+      margin: 60px 40px 0 0;
+        &__main_picture{
+          width: 100%;
+          height: 250px;
+            img{
+              width: 100%;
+              height: 100%;
+            } 
+        }
+        &__title{
+          color: $secondary;
+          font-size: 1.4rem;
+          font-weight: 700;
+          text-align: center;
+          padding: 30px 0;
+        }
+        &__description{
+          color: $mainColor;
+          font-size: 1.1rem;
+          font-weight: 400;
+          font-weight: 400;
+          text-align: center;
+          padding: 0 30px;
+        }
+        &__read_more{
+          width: 200px;
+          padding: 10px 10px;
+          background-color: $secondary;
+          color: #fff;
+          margin: 0 auto;
+          margin-top: 30px;
+          text-align: center;
+        }
+        &__content{
+          display: none;
+        }
+        &__author{
+          display: none;
+        }
+        &__date{
+          display: none;
+        }
+
+        
         &:first-child{
-          width: 75%;
+          width: 100%;
+          height: 700px;
+            .single_post__main_picture{
+              height: 500px;
+            }
         }
     }
 }
