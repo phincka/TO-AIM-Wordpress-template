@@ -17,36 +17,37 @@
           width: 40%;
           padding: 15px 20px;
           background-color: $secondary;
+          opacity: 0.5;
+          display: none;
           font-size: 1.5rem;
           color: #fff;
             &::first-letter{
               margin-left: 5px;
               font-size: 1.6rem;
-              font-weight: bold;
             }
         }
     }
-    &__dots{
+      &__dots{
       text-align: center;
       float: right;
       margin: -30px 20px 0 0;
         .dot{
           width: 10px;
           height: 10px;
-          border-radius: 10px;
-          background-color: red;     
+          background-color: #fff;     
           display: inline-block;
           transition: background-color 0.6s ease;
           margin-right: 5px;
+          border-radius: 10px;
+          border: 1px solid lightgrey;
         }
         .active {
           width: 28px;
           height: 10px;
+          background-color: #fff;
+          border: 1px solid lightgrey;
           border-radius: 10px;
-          background-color: #4aee34;
         }
-
-
 }
 }
 
@@ -69,16 +70,8 @@
   to {opacity: 1}
 }
 
-.sidebar{
-	//	display: none;
-  width: 25%;
-  float: right;
-  height: 100vh;
-	background-color: aquamarine;
-}
 .posts{
   width: 70%;
-  margin-top: 100px;
     .single_post{
       width: 45%;
       display: inline-block;
@@ -92,18 +85,11 @@
             } 
         }
         &__title{
-          color: $secondary;
-          font-size: 1.4rem;
-          font-weight: 700;
-          text-align: center;
+          @include fontStyle($secondary, 1.4rem, 700, center);
           padding: 30px 0;
         }
         &__description{
-          color: $mainColor;
-          font-size: 1.1rem;
-          font-weight: 400;
-          font-weight: 400;
-          text-align: center;
+          @include fontStyle($mainColor, 1rem, 400, center);
           padding: 0 30px;
         }
         &__read_more{

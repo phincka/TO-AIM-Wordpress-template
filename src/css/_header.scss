@@ -48,7 +48,7 @@
 		position: sticky;
 		top: 0;
 		background-color: #fff;
-    }
+  }
 	.header__branding{
 		display: block;
 		@include center();
@@ -103,6 +103,7 @@
 		background: #fff;
 		transition: $transition;
 		transform: translateX(-110vw);
+
 		li {
 			transition: $transition;
 			transform: translateX(-50px);

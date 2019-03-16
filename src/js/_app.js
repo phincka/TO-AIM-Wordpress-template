@@ -83,7 +83,6 @@ let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-
 	const slides = document.getElementsByClassName("slieds");
 	const dots = document.getElementsByClassName("dot");
 	for (let i = 0; i < slides.length; i++) {

@@ -1,0 +1,23 @@
+.sidebar{
+    //	display: none;
+    width: 25%;
+    margin-top: 60px;
+    float: right;
+    padding: 5px;
+    @include fontStyle($mainColor, 1rem, 400, left);
+    line-height: 22px;
+        h3{
+            @include fontStyle($secondary, 1.4rem, 700, center);
+            padding: 40px 10px 20px 0;
+        }
+        ul{
+            list-style: disc;
+        }
+        li{
+            margin-bottom: 10px;
+            line-height: 15px;
+        }
+
+
+        
+}
