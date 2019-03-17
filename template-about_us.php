@@ -31,7 +31,7 @@ get_header(); ?>
 			<div class="single_person">
 				<div class="single_person--img"><img src="<?php echo the_sub_field('about_us_picture'); ?>" alt=""></div>
 					<h2 class="single_person--name"><?php echo the_sub_field('about_us_name'); ?></h2>
-						<p class="single_person--description"><?php echo the_sub_field('about_us_description'); ?></p>
+						<div class="single_person--description chuj"><?php echo the_sub_field('about_us_description'); ?></div>
 			</div>
 		<?php endwhile; endif;?>
 

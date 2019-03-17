@@ -3,7 +3,7 @@
             display: flex;
             justify-content: space-between;
                 &--text{
-                    margin: 100px 0 0 20%;
+                    margin: 50px 0 0 20%;
                         h1{
                             margin-left: 10px;
                             @include fontStyle($secondary, 4.5rem, 900, left);
@@ -21,7 +21,8 @@
                         }
                 }
                 &--picture{
-                    width: 50%;
+                    width: 40%;
+                    margin-top: 80px;
                 }
             }
         &__break{
@@ -34,30 +35,224 @@
                 h2{
                     padding: 110px 0;
                     margin-left: 10%;
-                    letter-spacing: 1px;
-                    @include fontStyle(#fff, 1.5rem, 400, left);
+                    @include fontStyle(#fff, 1.4rem, 400, left);
                 }
         }
         &__bottom{
-            background-color: red;
             .single_person{
                 margin: 0 auto;
-                width: 70%;
+                width: 100%;
                     &--img{
-                        width: 400px;
+                        width: 600px;
                         margin: 0 auto;
+                        margin-top: 60px;
+                        -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.28); 
+                        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.28);
                     }
                     &--name{
-                        @include fontStyle($secondary, 1.5rem, 700, center);
+                        padding: 30px 0 20px 0 0;
+                        @include fontStyle($secondary, 1.8rem, 700, center);
+                        letter-spacing: 1px;
                     }
                     &--description{
-                        width: 20%;
-                        @include fontStyle($mainColor, 1rem, 400, left);
+                        @include fontStyle($mainColor, 1.1rem, 400, justify);
+                        line-height: 23px;
+                        width: 40%;
+                        margin: 0 auto;
+                        &::first-letter{
+                            margin: 0 1px 0 10px;
+                        }
                     }
             }
         }
 }
+@media screen and (max-width: $laptop) {
+    .about_us{
+            &__top{
+                    &--text{
 
+                            h1{
+                                font-size: 3rem;
+                            }
+                            h3{
+                                font-size: 1rem;
+                            }
+                    }
+                }
+            &__break{
+                    h2{
+                        font-size: 1.2rem;
+                    }
+            }
+            &__bottom{
+                .single_person{
+                    margin: 0 auto;
+                    width: 100%;
+                        &--img{
+                            width: 600px;
+                            margin-top: 60px;
+                                img{
+                                    margin: 0 auto;
+                                }
+                        }
+                        &--name{
+                            padding: 30px 0 20px 0 0;
+                            @include fontStyle($secondary, 1.8rem, 700, center);
+                        }
+                        &--description{
+                            @include fontStyle($mainColor, 1.1rem, 400, justify);
+                            line-height: 23px;
+                            width: 50%;
+                            margin: 0 auto;
+                        }
+                }
+            }
+    }
 
+}
+@media screen and (max-width: $minLaptop) {
+    .about_us{
+            &__top{
+                    &--text{
+
+                            h1{
+                                margin-left: 5px;
+                                font-size: 2.5rem;
+                            }
+                            h3{
+                                font-size: 1rem;
+                            }
+                    }
+                }
+            &__break{
+                height: 150px;
+                margin-top: -50px;
+                    h2{
+                        padding: 60px 0;
+                        font-size: 1rem;
+                    }
+            }
+            &__bottom{
+                .single_person{
+                        &--name{
+                            font-size: 1.8rem;
+                        }
+                        &--description{
+                            font-size: 1.1rem;
+                        }
+                }
+            }
+    }
+
+}
+@media screen and (max-width: $tablet) {
+    .about_us{
+            &__top{
+                    &--text{
+
+                            h1{
+                            }
+                            h3{
+                            }
+                    }
+                }
+            &__break{
+                    h2{
+                    }
+            }
+            &__bottom{
+                .single_person{
+                    width: 100%;
+                        &--img{
+                            width: 350px;
+                        }
+                        &--name{
+                            font-size: 1.5rem;
+                        }
+                        &--description{
+                            font-size: 1rem;
+                            width: 50%;
+                        }
+                }
+            }
+    }
+
+}
+@media screen and (max-width: 730px) {
+    .about_us{
+            &__top{
+                    &--text{
+                            h1{
+
+                            }
+                            h3{
+                                font-size: 1.2rem;
+                            }
+                    }
+                    .about_us__top--picture{
+                        display: none;
+                    }
+                }
+            &__break{
+                margin-top: 0;
+                    h2{
+                    }
+            }
+            &__bottom{
+                .single_person{
+                    width: 100%;
+                        &--img{
+                            width: 350px;
+                        }
+                        &--name{
+                            font-size: 1.5rem;
+                        }
+                        &--description{
+                            font-size: 1rem;
+                            width: 50%;
+                        }
+                }
+            }
+    }
+
+}
+@media screen and (max-width: $phone) {
+    .about_us{
+            &__top{
+                    &--text{
+                            h1{
+
+                            }
+                            h3{
+                                font-size: 1.2rem;
+                            }
+                    }
+                    .about_us__top--picture{
+                        display: none;
+                    }
+                }
+            &__break{
+                margin-top: 0;
+                    h2{
+                    }
+            }
+            &__bottom{
+                .single_person{
+                    width: 100%;
+                        &--img{
+                            width: 70%;
+                        }
+                        &--name{
+                            font-size: 1.5rem;
+                        }
+                        &--description{
+                            font-size: 1rem;
+                            width: 70%;
+                        }
+                }
+            }
+    }
+
+}
 
 
