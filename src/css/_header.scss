@@ -10,7 +10,6 @@
 		width: 100%;
 //		position: sticky;
 		top: 0;
-		
 			&__branding{
 				width: 350px;
 				display: block;
@@ -44,28 +43,28 @@
 @media screen and (max-width: $mobile) {
 	.header{
 		width: 100%;
-		height: 250px;
 		position: sticky;
 		top: 0;
 		background-color: #fff;
+		padding-bottom: 30px;
   }
 	.header__branding{
 		display: block;
 		@include center();
 			img{
-				width: 200px;
+				width: 100px;
 			}
 	}
 	.menu__toggle {
-		$size: 40px;
+		$size: 30px;
 		width: $size;
 		height: $size;
 		z-index: 100;
 		position: absolute;
 		cursor: pointer;
 		float: right;
-		top: 40px;
-		right: 40px;
+		top: 20px;
+		right: 20px;
 		svg {
 			position: absolute;
 			right: -15%;

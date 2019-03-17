@@ -21,3 +21,8 @@
 
         
 }
+@media screen and (max-width: $laptop) {
+    .sidebar{
+        display: none;
+    }
+}

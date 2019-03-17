@@ -1,3 +1,63 @@
-.product_img{
-    width: 400px;
+.about_us{
+        &__top{
+            display: flex;
+            justify-content: space-between;
+                &--text{
+                    margin: 100px 0 0 20%;
+                        h1{
+                            margin-left: 10px;
+                            @include fontStyle($secondary, 4.5rem, 900, left);
+                        }
+                        h3{
+                            padding: 20px 0;
+                            @include fontStyle($mainColor, 1.3rem, 400, left);
+                                span{
+                                    font-weight: bold;
+                                }
+                                b{
+                                    color: $secondary;
+                                    font-weight: bold;
+                                }
+                        }
+                }
+                &--picture{
+                    width: 50%;
+                }
+            }
+        &__break{
+            width: 100%;
+            height: 250px;
+            -webkit-clip-path: polygon(0 20%, 100% 30%, 100% 70%, 0 80%);
+            clip-path: polygon(0 20%, 100% 30%, 100% 70%, 0 80%);            
+            background-color: $secondary;
+            margin-top: -150px;
+                h2{
+                    padding: 110px 0;
+                    margin-left: 10%;
+                    letter-spacing: 1px;
+                    @include fontStyle(#fff, 1.5rem, 400, left);
+                }
+        }
+        &__bottom{
+            background-color: red;
+            .single_person{
+                margin: 0 auto;
+                width: 70%;
+                    &--img{
+                        width: 400px;
+                        margin: 0 auto;
+                    }
+                    &--name{
+                        @include fontStyle($secondary, 1.5rem, 700, center);
+                    }
+                    &--description{
+                        width: 20%;
+                        @include fontStyle($mainColor, 1rem, 400, left);
+                    }
+            }
+        }
 }
+
+
+
+
