@@ -1,0 +1,42 @@
+.offer__map_section{
+	@include center();
+
+		#map{
+			width: 40%;
+			height: 350px;
+				.gmnoprint{
+					display: none;
+				}
+				.gm-style{
+					button{
+						display: none;
+					}
+				}
+		}
+		&--title{
+			width: 60%;
+			height: 350px;
+			
+			background-color: $secondary;
+			padding: 50px 0 0 0;
+				h2{
+					@include fontStyle(#fff, 3rem, 400, center);
+				}
+				h1{
+					@include fontStyle(#fff, 7rem, 700, center);
+				}
+				&--contact{
+					width: 300px;
+					background-color: #fff;
+					margin: 0 auto;
+					@include fontStyle($secondary, 2rem, 700, center);
+				}
+		}
+}
+
+
+
+
+
+
+

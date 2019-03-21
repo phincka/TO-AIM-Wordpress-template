@@ -147,21 +147,21 @@
   .posts{
     width: 90%;
     margin: 0 auto;
-    .single_post{
-      width: 70%;
-      display: block;
-      margin:  0 auto;  
-      margin-top: 70px;
-        &__main_picture{
-          height: 300px;
-        }
-        &:first-child{
-          height: 700px;  
-            .single_post__main_picture{
-              height: 450px;
-            }
-        }
-    }
+      .single_post{
+        width: 70%;
+        display: block;
+        margin:  0 auto;  
+        margin-top: 70px;
+          &__main_picture{
+            height: 300px;
+          }
+          &:first-child{
+            height: 700px;  
+              .single_post__main_picture{
+                height: 450px;
+              }
+          }
+      }
   }
 }
 @media screen and (max-width: $tablet) {

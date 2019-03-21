@@ -423,10 +423,6 @@ add_action("init","reset_editor");
  * 
  **/
 
-function my_acf_init() {
-	
-	acf_update_setting('google_api_key', 'AIzaSyCfNPcJ1QePHRGwIU8koNy6fZcLh2lCfx8');
-}
 
 add_action('acf/init', 'my_acf_init');
 
