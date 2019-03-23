@@ -1,42 +1,96 @@
-.offer__map_section{
-	@include center();
+				#map{
+					width: 100%;
+					height: 400px;
+					-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+						clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+					margin-bottom: -30px;
+						.gmnoprint{
+							display: none;
+						}
+						.gm-style{
+							button{
+								display: none;
+							}
+						}
+				}
+.offer{
+		&__map_section{
+			@include center();
+				&--title{
+					width: 100%;
+					height: 400px;
+	//				background-color: grey;
+					background-color: $secondary;
+					padding: 80px 0 0 0;
+						h2{
+							@include fontStyle(#fff, 3rem, 400, center);
+						}
+						h1{
+							@include fontStyle(#fff, 7rem, 700, center);
+						}
+						&--contact{
+							width: 300px;
+							background-color: #fff;
+							margin: 0 auto;
+							@include fontStyle($secondary, 2rem, 700, center);
+						}
+				}
 
-		#map{
-			width: 40%;
-			height: 350px;
-				.gmnoprint{
-					display: none;
-				}
-				.gm-style{
-					button{
-						display: none;
-					}
-				}
 		}
-		&--title{
-			width: 60%;
-			height: 350px;
-			
-			background-color: $secondary;
-			padding: 50px 0 0 0;
-				h2{
-					@include fontStyle(#fff, 3rem, 400, center);
+
+
+		&__description_section{
+			width: 70%;
+			margin: 0 auto;
+			padding: 100px 0;
+				&--first_box{
+					float: left;
+					width: 45%;
 				}
-				h1{
-					@include fontStyle(#fff, 7rem, 700, center);
+				&--second_box{
+					float: right;
+					width: 45%;
 				}
-				&--contact{
-					width: 300px;
-					background-color: #fff;
-					margin: 0 auto;
-					@include fontStyle($secondary, 2rem, 700, center);
+				&--title{
+					@include fontStyle($secondary, 2rem, 700, left);
 				}
+				&--offer_description{
+					margin-top: 25px;
+					padding-bottom: 50px;
+					line-height: 23px;
+					@include fontStyle($mainColor, 1.2rem, 400, justify);
+				}
+				&--offer_list{
+						ul{
+							padding-bottom: 50px;
+								li{
+									margin-bottom: 0px;
+									@include fontStyle($mainColor, 1.2rem, 400, left);
+										&::before{
+											display: inline-block;
+											color: $secondary;
+											content: "\2022"; 
+											font-size: 2.5rem; 
+											position: relative;
+											top: 7px;
+											padding: 0 10px;
+										}
+								}
+						}
+				}
+
 		}
+
 }
 
-
-
-
+@media screen and (max-width: $mobile) {
+	.offer__description_section--first_box{
+		width: 100%;
+	}
+	.offer__description_section--second_box{
+		width: 100%;
+	}
+}
 
 
 

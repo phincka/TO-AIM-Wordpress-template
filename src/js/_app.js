@@ -102,11 +102,11 @@ function showSlides() {
 
 
 	  
-      function initMap() {
+    function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-			center: { lat: 54.7179000, lng: 18.4084100 },
-		  zoom: 10,
-		  styles: [
+			center: { lat: 54.737364, lng: 18.832070 },
+		zoom: 9,
+		styles: [
 			{
 				"elementType": "geometry",
 				"stylers": [
