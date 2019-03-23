@@ -37,16 +37,8 @@ get_header(); ?>
 				</div>
 		</div>
 	</div>
-
-
-	
 	</section>
-	<div class="">
-					<div id="map"></div>
-
-
-	</div>
-
+	<div id="map"></div>
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcRb8Hf3A9GfA3rNXPnSHOfRh5sKct6VM&callback=initMap" async defer></script>
 <?php

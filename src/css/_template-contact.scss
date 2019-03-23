@@ -1,0 +1,45 @@
+.contact_section{
+    width: 70%;
+    margin: 0 auto;
+        h1{
+            @include fontStyle($secondary, 2rem, 700, left);
+            padding: 50px 0;
+        }
+        &__description{
+                &--text{
+                    width: 60%;
+                    float: left;
+                    @include fontStyle($mainColor, 1.2rem, 400, justify);
+                    padding: 0 60px;
+                }
+                &--picture{
+                    float: right;
+                    width: 40%;
+                        img{
+                            width: 60%;
+                            -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.28); 
+                            box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.28);
+                        }
+                }
+        }
+        &__contact_list{
+            width: 100%;
+            padding-bottom: 50px;
+                h2{
+                    @include fontStyle($secondary, 1.6rem, 700, left);
+                    margin: 40px 0 0 0;
+                }
+                &--single{
+                    margin: 20px 0 20px 50px;
+                        img{
+                            width: 32px;
+                            float: left;
+                        }
+                        a{
+                            display: block;
+                            padding: 5px 0 0 50px;
+                            @include fontStyle($mainColor, 1.4rem, 500, left);
+                        }
+                }
+        }
+}
