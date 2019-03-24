@@ -1,6 +1,7 @@
 .footer{
 	width: 100%;
 	padding: 50px 15px;
+	margin-top: 100px;
 	background-color: $secondary;
     -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 	clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
@@ -25,8 +26,7 @@
 							li{
 								margin-left: 40px;
 									&:hover{
-										color: #7c7c7c;
-										text-decoration: underline;
+										color: #f3adbe;
 									}
 									&:first-child{
 										margin-left: 0;
@@ -39,11 +39,15 @@
 			@include center();
 				a{
 					margin-left: 20px;
+					transition: .5s;
 						img{
 							width: 60px;
 						}
 					&:first-child{
 						margin-left: 0;
+					}
+					&:hover{
+						transform: rotate(5deg) scale(1.1,1.1);
 					}
 				}
 		}

@@ -23,4 +23,17 @@ button,
 input {
 	transition: $transition;
 }
+//animate
+.hide{
+	opacity:0
+}
 
+.show {
+	opacity: 1;
+}
+.animated{
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:none!important;
+    animation-fill-mode:none!important
+}

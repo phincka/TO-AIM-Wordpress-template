@@ -86,6 +86,10 @@
         &__title{
           @include fontStyle($secondary, 1.4rem, 700, center);
           padding: 30px 0;
+          transition: 0.05s;
+            &:hover{
+              color: #f3adbe;
+            }
         }
         &__description{
           @include fontStyle($mainColor, 1rem, 400, justify);
@@ -98,9 +102,14 @@
           margin: 0 auto;
           margin-top: 30px;
           text-align: center;
+          transition: .5s;
             a{
               display: block;
               padding: 10px 10px;
+            }
+            &:hover{
+              transform:scale(1.1,1);
+              border-radius: 30px;
             }
         }
         &__content{
@@ -176,6 +185,7 @@
             }
       }
       &__dots{
+        margin-top: -30px;
         .dot{
         }
         .active {
@@ -199,7 +209,10 @@
 }
 @media screen and (max-width: $phone) {
   .slider{
-    margin-top: -50px;
+    margin: -50px 0 -20px 0;
+      &__dots{
+        display: none;
+      }
   }
   .posts{
     .single_post{
@@ -219,7 +232,7 @@
 }
 @media screen and (max-width: $minPhone) {
   .slider{
-    margin-top: -100px;
+    margin: -50px 0 -60px 0;
   } 
   .posts{
     .single_post{

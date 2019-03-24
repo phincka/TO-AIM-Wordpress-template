@@ -23,6 +23,8 @@
                 &--picture{
                     width: 40%;
                     margin-top: 80px;
+                    position: relative;
+                    z-index: -2;
                 }
             }
         &__break{
@@ -32,6 +34,8 @@
             clip-path: polygon(0 20%, 100% 30%, 100% 70%, 0 80%);            
             background-color: $secondary;
             margin-top: -150px;
+            position: relative; /* Allows z-index to take affect */
+            z-index: -1;     
                 h2{
                     padding: 110px 0;
                     margin-left: 10%;

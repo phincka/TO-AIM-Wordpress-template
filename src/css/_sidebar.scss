@@ -16,6 +16,9 @@
         li{
             margin-bottom: 10px;
             line-height: 15px;
+                &:hover{
+                    color: $secondary;
+                }
         }
 
 

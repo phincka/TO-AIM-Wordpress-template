@@ -76,8 +76,18 @@ jQuery(document).ready(function ($) {
 	console.log("https://websitestyle.pl - Strony internetowe - zapraszamy na rozmowę rekrutacyjną :)");
 
 
+	$('*[data-animate]').addClass('hide').each(function () {
+		$(this).viewportChecker({
+			classToAdd: 'show animated ' + $(this).data('animate'),
+			classToRemove: 'hide',
+			offset: '10%'
+		});
+	});
 
 });
+
+
+
 
 let slideIndex = 0;
 showSlides();
@@ -95,7 +105,7 @@ function showSlides() {
 	}
 	slides[slideIndex - 1].style.display = "block";
 	dots[slideIndex - 1].className += " active";
-	setTimeout(showSlides, 10000); // Change image every 2 seconds
+	setTimeout(showSlides, 20000); // Change image every 2 seconds
 };
 
 	  var map;
@@ -289,4 +299,5 @@ function showSlides() {
           map: map,
           title: 'Hello World!'
         });
-      }
+			};
+

@@ -48,7 +48,7 @@ get_header(); ?>
 	?>
 	<?php if($query->have_posts()) : ?>
 		<?php while ($query->have_posts()) : $query->the_post(); ?>
-			<div class="single_post">
+			<div class="single_post" data-animate="fadeIn">
 				<div class="single_post__main_picture"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
 					<h1 class="single_post__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 						<div class="single_post__description"><?php echo get_field('post_short_desription'); ?></div>

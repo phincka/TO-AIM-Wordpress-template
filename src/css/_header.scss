@@ -8,10 +8,9 @@
 	}
 	.header {
 		width: 100%;
-//		position: sticky;
 		top: 0;
 			&__branding{
-				width: 350px;
+				width: 250px;
 				display: block;
 				margin: 0 auto;
 				padding: 20px 0 20px 0;
@@ -30,7 +29,7 @@
 										margin-left: 0;
 									}
 									&:hover{
-										color: #7c7c7c;
+										color: $secondary;
 									}
 									a{
 										display: block;
@@ -52,7 +51,7 @@
 		display: block;
 		@include center();
 			img{
-				width: 100px;
+				width: 150px;
 			}
 	}
 	.menu__toggle {

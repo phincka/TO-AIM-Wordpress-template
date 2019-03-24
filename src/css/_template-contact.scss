@@ -36,10 +36,50 @@
                             float: left;
                         }
                         a{
+                            width: 50%;
                             display: block;
                             padding: 5px 0 0 50px;
                             @include fontStyle($mainColor, 1.4rem, 500, left);
+                                &:hover{
+                                    color: $secondary;
+                                }
                         }
                 }
         }
 }
+
+@media screen and (max-width: $laptop) {
+	.contact_section__description--picture{
+		img{
+            width: 100%;
+        }
+	}
+}
+@media screen and (max-width: $minLaptop) {
+    .contact_section{
+        h1{
+
+            padding: 50px 20px;
+        }
+    }
+	.contact_section__description--text{
+        width: 100%;
+        padding: 0 20px;
+	}
+	.contact_section__description--picture{
+        display: none;
+	}
+}
+@media screen and (max-width: $mobile) {
+	.contact_section{
+        width: 90%;
+    }
+}
+@media screen and (max-width: $phone) {
+	.contact_section{
+        width: 95%;
+    }
+}
+
+
+

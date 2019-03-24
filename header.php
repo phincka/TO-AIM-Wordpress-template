@@ -11,6 +11,9 @@
 	<meta name="description" content="<?php echo $description ?>">
 
 	<meta name="theme-color" content="#4285f4">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 
 	<!-- OG -->
 	<meta property="og:url" content="<?php the_permalink() ?>">
@@ -55,7 +58,7 @@
 		</style>
 	</noscript>
 
-	<header class="header headroom" role="banner">
+	<header  class="header headroom animated fadeIn" role="banner">
 		<div class="grid">
 			<a class="header__branding" href="<?php echo get_home_url(); ?>">
 				<img src="<?php asset('img/aim-logo.png') ?>" alt="<?php echo get_bloginfo('title') ?>">

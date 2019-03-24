@@ -7,9 +7,9 @@
 get_header(); ?>
 	<section class="offer">
 		<div class="offer__map_section--title">
-			<h2>Znajdziesz nas w</h2>
-			<h1>PUCKU</h1>
-			<div class="offer__map_section--title--contact">
+			<h2 data-animate="slideInLeft">Znajdziesz nas w</h2>
+			<h1 data-animate="slideInLeft">PUCKU</h1>
+			<div data-animate="slideInRight" class="offer__map_section--title--contact">
 				<h3><a target="_blank" href="<?php echo the_field('offer_quick_contact');?>">Napisz do nas</a></h3>
 			</div>
 		</div>
@@ -17,13 +17,13 @@ get_header(); ?>
 
 
 	<div class="offer__description_section">
-		<div class="offer__description_section--first_box">
+		<div data-animate="slideInLeft" class="offer__description_section--first_box">
 			<h1 class="offer__description_section--title"><?php echo the_field("offer_description_title2"); ?></h1>
 				<div class="offer__description_section--offer_description">
 					<?php echo the_field("offer_description"); ?>
 				</div>
 		</div>
-		<div class="offer__description_section--second_box">
+		<div data-animate="slideInRight" class="offer__description_section--second_box">
 			<h1 class="offer__description_section--title"><?php echo the_field("offer_description_title"); ?></h1>
 				<div class="offer__description_section--offer_list">
 					<ul>
