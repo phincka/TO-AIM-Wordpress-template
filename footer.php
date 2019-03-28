@@ -5,15 +5,14 @@
 		<?php wp_nav_menu(['theme_location' => 'footer', 'container' => false]); ?>
 	</nav>
 	<div class="footer__contact" >
-		<a data-animate="slideInRight" target="_blank" href="https://m.me/234378590575958"><img src="<?php asset('img/facebook-icon.png'); ?>"></a>
+		<a data-animate="slideInRight" target="_blank" href="https://www.facebook.com/AiM-B%C4%85d%C5%BA-niezwyk%C5%82ym-bohaterem-234378590575958/"><img src="<?php asset('img/facebook-icon.png'); ?>"></a>
 		<a data-animate="slideInLeft" href="mailto:toaim@wp.pl"><img src="<?php asset('img/mail-icon.png'); ?>"></a>
 	</div>
 	<div class="footer__author" >
-		©<a target="_blank" href="https://www.facebook.com/hinczykk"> Paweł Hincka </a>2018 | Design <a target="_blank" href="https://www.autor.pl"> Jan Szweda</a>
+		©<a target="_blank" href="https://www.facebook.com/hinczykk"> Paweł Hincka</a> 2018 | Design <a target="_blank" href="https://www.facebook.com/jan.szweda.9"> Jan Szweda</a>
 	</div>
 </footer>
 <?php wp_footer(); ?>
 	<script src="<?php asset('js/jquery.viewportchecker.min.js') ?>"></script>
-
 </body>
 </html>	

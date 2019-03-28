@@ -3,18 +3,13 @@
  * Template Name: About us
  * @package ths
  */
-
 get_header(); ?>
-
-
-
 
 <section class="about_us">
 	<div class="about_us__top">
 		<div data-animate="slideInLeft"  class="about_us__top--text">
-			<h1 data-animate="fadeIn" >Cześć</h1>
-				<h3>To my <br> <span>Ania Mukowska i Marta Tomczyńska.</span></h3>
-				<h3>Nazywamy się <b>AIM!</b></h3>
+				<h2>To my <br> <span>Ania Mukowska i Marta Tomczyńska.</span></h2>
+				<h3>Nazywamy się <b>AiM!</b></h3>
 		</div>
 		<div class="about_us__top--picture"  data-animate="slideInRight" >
 			<img src="<?php asset('img/aboutus-main.png') ?>" alt="x">
@@ -34,10 +29,6 @@ get_header(); ?>
 						<div class="single_person--description chuj"><?php echo the_sub_field('about_us_description'); ?></div>
 			</div>
 		<?php endwhile; endif;?>
-
 	</div>
 </section>
-
-
-
 <?php get_footer(); ?>

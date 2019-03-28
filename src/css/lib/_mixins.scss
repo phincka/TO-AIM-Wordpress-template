@@ -4,3 +4,9 @@
     font-weight: $fontWeight;
     text-align: $align        
 }
+@mixin postStyle($color, $fontSize, $fontWeight, $lineH) {
+    color: $color;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineH        
+}

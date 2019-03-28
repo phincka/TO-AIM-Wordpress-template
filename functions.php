@@ -422,8 +422,6 @@ add_action("init","reset_editor");
  * Google Maps 
  * 
  **/
-
-
 add_action('acf/init', 'my_acf_init');
 
 

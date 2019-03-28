@@ -10,7 +10,7 @@
 		width: 100%;
 		top: 0;
 			&__branding{
-				width: 250px;
+				width: 200px;
 				display: block;
 				margin: 0 auto;
 				padding: 20px 0 20px 0;
@@ -19,6 +19,7 @@
 				text-align: center;
 				padding-bottom: 40px;
 					ul{
+						list-style: none;
 						display: inline-flex;
 							li{
 								margin-left: 40px;
@@ -45,25 +46,24 @@
 		position: sticky;
 		top: 0;
 		background-color: #fff;
-		padding-bottom: 30px;
+		padding: 10px 0;
   }
 	.header__branding{
-		display: block;
 		@include center();
 			img{
 				width: 150px;
 			}
 	}
 	.menu__toggle {
-		$size: 30px;
+		$size: 50px;
 		width: $size;
 		height: $size;
 		z-index: 100;
 		position: absolute;
 		cursor: pointer;
 		float: right;
-		top: 20px;
-		right: 20px;
+		top: 40px;
+		right: 40px;
 		svg {
 			position: absolute;
 			right: -15%;
@@ -101,7 +101,7 @@
 		background: #fff;
 		transition: $transition;
 		transform: translateX(-110vw);
-
+		list-style: none;
 		li {
 			transition: $transition;
 			transform: translateX(-50px);
@@ -142,12 +142,16 @@
 			}
 		}
 	}
+}
+@media screen and (max-width: $minPhone) {
 	.header{
-			&__branding img{
-				margin: 25px 0 0 20px;
-		}
+		padding: 0;
 	}
-	.sidebar{
-			display: none;
+	.header__branding{
+	}
+	.menu__toggle {
+		$size: 20px;
+		top: 30px;
+		right: 30px;
 	}
 }

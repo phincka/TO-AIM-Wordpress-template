@@ -5,7 +5,7 @@
 	background-color: $secondary;
     -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 	clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-	position: static;
+	position: relative;
 	z-index: -1;
 		&__branding{
 			img{
@@ -19,6 +19,7 @@
 				justify-content: center;
 				padding: 40px 0;
 					ul{
+						list-style: none;
 						display: inline-flex;
 						text-transform: uppercase;
 						color: #fff;
@@ -57,4 +58,42 @@
 					color: #fff;
 				}
 		}
+}
+@media screen and (max-width: $mobile) {
+.footer{
+		&__branding{
+			margin-bottom: 20px;
+			img{
+				width: 150px;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		&__nav{
+				display: none;
+		}
+		&__contact{	
+			margin-bottom: 40px;
+			@include center();
+				a{
+					margin-left: 20px;
+					transition: .5s;
+						img{
+							width: 60px;
+						}
+					&:first-child{
+						margin-left: 0;
+					}
+					&:hover{
+						transform: rotate(5deg) scale(1.1,1.1);
+					}
+				}
+		}
+		&__author{
+			@include fontStyle(#f3adbe, 1rem, 900, center);
+				a{
+					color: #fff;
+				}
+		}
+}
 }

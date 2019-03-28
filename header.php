@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,7 +13,9 @@
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
+<link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
 
+	
 	<!-- OG -->
 	<meta property="og:url" content="<?php the_permalink() ?>">
 	<meta property="og:type" content="website">
