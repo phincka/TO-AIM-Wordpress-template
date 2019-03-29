@@ -3,8 +3,12 @@
  * Template Name: About us
  * @package ths
  */
-get_header(); ?>
 
+
+$alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
+if(count($alt)) echo $alt;
+
+get_header(); ?>
 <section class="about_us">
 	<div class="about_us__top">
 		<div data-animate="slideInLeft"  class="about_us__top--text">
@@ -12,7 +16,7 @@ get_header(); ?>
 				<h3>Nazywamy się <b>AiM!</b></h3>
 		</div>
 		<div class="about_us__top--picture"  data-animate="slideInRight" >
-			<img src="<?php asset('img/aboutus-main.png') ?>" alt="x">
+			<img src="<?php asset('img/aboutus-main.png') ?>" alt="Ania i Marta">
 		</div>	
 	</div>
 	<div class="about_us__break">
@@ -24,9 +28,9 @@ get_header(); ?>
 			while ( have_rows('about_us') ) : the_row(); 
 		?>	
 			<div class="single_person" data-animate="slideInLeft">
-				<div class="single_person--img"><img src="<?php echo the_sub_field('about_us_picture'); ?>" alt=""></div>
+				<div class="single_person--img"><img src="<?php echo the_sub_field('about_us_picture'); ?>" alt="Person"></div>
 					<h2 class="single_person--name"><?php echo the_sub_field('about_us_name'); ?></h2>
-						<div class="single_person--description chuj"><?php echo the_sub_field('about_us_description'); ?></div>
+						<div class="single_person--description"><?php echo the_sub_field('about_us_description'); ?></div>
 			</div>
 		<?php endwhile; endif;?>
 	</div>

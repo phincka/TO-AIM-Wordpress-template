@@ -13,9 +13,6 @@
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
-<link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
-
-	
 	<!-- OG -->
 	<meta property="og:url" content="<?php the_permalink() ?>">
 	<meta property="og:type" content="website">
@@ -26,7 +23,7 @@
 	<meta property="og:locale" content="<?php echo get_locale() ?>">
 	<!-- OG -->
 
-	<link rel="shortcut icon" href="<?php asset('img/aim-logo.png'); ?>">
+	<link rel="shortcut icon" href="<?php asset('img/aim-logo-favicon.png'); ?>">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<!-- wp -->
@@ -64,15 +61,15 @@
 			<a class="header__branding" href="<?php echo get_home_url(); ?>">
 				<img src="<?php asset('img/aim-logo.png') ?>" alt="<?php echo get_bloginfo('title') ?>">
 			</a>
-			<nav class="header__nav" role="navigation">
-				<?php wp_nav_menu(['theme_location' => 'header', 'container' => false]); ?>
-				<div class="menu__toggle">
+							<div class="menu__toggle">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 30">
 						<path d="M0,5H62c13,0,6,28-4,18L35,0" />
 						<path d="M0,15H70" />
 						<path d="M0,25H62c13,0,6-28-4-18L35,30" />
 					</svg>
 				</div>
+			<nav class="header__nav" role="navigation">
+				<?php wp_nav_menu(['theme_location' => 'header', 'container' => false]); ?>
 			</nav>
 
 		</div>

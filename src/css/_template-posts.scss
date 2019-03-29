@@ -24,7 +24,7 @@
             box-shadow: 0px 1px 8px 20px rgba(7,7,7,0.45);
         }
         &--title{
-            @include fontStyle($secondary, 2.5rem, 700, left);
+            @include fontStyle($secondary, 2.8rem, 700, left);
             padding: 40px 50px;
         }
         &__content{
@@ -84,17 +84,19 @@
                 }
                 ul{
                     margin-left: 30px;
+                    padding: 15px;
                 }
                 ol{
                     margin-left: 30px;
+                    padding: 15px;
                 }
         }
         &__author{
             margin-top: 80px;
-            @include fontStyle($secondary, 1.2rem, 600, right);
+            @include fontStyle($secondary, .9rem, 600, right);
         }
         &__date{
-            @include fontStyle($secondary, 1.1rem, 400, right);
+            @include fontStyle($secondary, .9rem, 400, right);
         }
 }
 @media screen and (max-width: $minLaptop) {
@@ -102,8 +104,6 @@
         width: 85%;
         &__box{
             width: 85%;
-        }
-        &--title{
         }
         &__content{
             padding: 0 80px 100px 80px;
@@ -134,7 +134,7 @@
                 box-shadow: none;
             }
             &--title{
-                font-size: 2.3rem;
+                font-size: 2.8rem;
                 padding: 50px 20px;
             }
     }
@@ -147,7 +147,7 @@
                 }
             }
             &--title{
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
     }
 }

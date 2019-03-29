@@ -3,7 +3,6 @@
  * Template Name: Offer
  * @package ths
  */
-
 get_header(); ?>
 	<section class="offer">
 		<div class="offer__map_section--title">

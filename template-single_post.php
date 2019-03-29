@@ -1,9 +1,8 @@
 <?php
 /*
- * Template Name: Wpis
+ * Template Name: Post
  * Template Post Type: post
  */
-  
  get_header();  ?>
 <section class="single_post_template">
 	<div class="single_post_template__baner">

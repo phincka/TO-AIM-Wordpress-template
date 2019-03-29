@@ -5,8 +5,6 @@
 	background-color: $secondary;
     -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 	clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-	position: relative;
-	z-index: -1;
 		&__branding{
 			img{
 				width: 200px;

@@ -4,10 +4,10 @@
     &__single_element{
         width: 100%; 
         position: relative; 
-        z-index: -1;
+        z-index: 1;
           &--picture{
               width: 100%;
-              height: 600px;
+              height: 620px;
               background-size: 100%;
               background-position: center;
               background-repeat: no-repeat;
@@ -16,6 +16,7 @@
               position: relative;
           }
           &--title{
+            margin-top: -50px;
             padding: 30px;
             background-color: $secondary;
             position: relative;
@@ -57,7 +58,7 @@
             } 
         }
         &__title{
-          @include fontStyle($secondary, 1.4rem, 700, center);
+          @include fontStyle($secondary, 2rem, 700, center);
           padding: 30px 0;
           transition: 0.05s;
             &:hover{
@@ -65,15 +66,22 @@
             }
         }
         &__description{
-          @include fontStyle($mainColor, 1rem, 400, justify);
+          @include fontStyle($mainColor, 1.1rem, 400, justify);
           padding: 0 30px;
+        }
+        &__author{
+          @include fontStyle($secondary, .9rem, 400, right);
+          padding: 20px 30px 0 30px;
+        }
+        &__date{
+          @include fontStyle($secondary, .9rem, 400, right);
+          padding: 0 30px 20px 30px;
         }
         &__read_more{
           width: 200px;
           background-color: $secondary;
           color: #fff;
           margin: 0 auto;
-          margin-top: 30px;
           text-align: center;
           transition: .5s;
             a{
@@ -95,7 +103,27 @@
     }
 }
 
-
+.pagination {
+  @include center();
+  @include fontStyle($secondary, 1.8rem, 700, center);
+  margin-top: 50px;
+    span{
+      padding: 10px;
+        &:first-child{
+          display: none;
+        }
+    }
+    .inactive{
+      padding: 10px;
+        &:hover{
+          font-size: 2rem;
+        }
+    }
+    .current{
+      font-size: 2rem;
+    }
+  
+}
 @media screen and (max-width: $desktop) {
   .slider{
     &__single_element{
@@ -116,7 +144,7 @@
             height: 450px;
           }
           &:first-child{
-            height: 750px;  
+            height: 830px;  
               .single_post__main_picture{
                 height: 500px;
               }
@@ -137,13 +165,13 @@
     margin: 0 auto;
       .single_post{
         width: 70%;
-          &__main_picture{
+          &__main_pictur{
             height: 450px;
           }
           &:first-child{
-            height: 800px;  
+            height: 850px;
               .single_post__main_picture{
-                height: 550px;
+                height: 450px;
               }
           }
       }
@@ -153,7 +181,7 @@
   .posts{
       .single_post{
           &:first-child{
-            height: 750px;  
+            height: 820px;  
               .single_post__main_picture{
                 height: 450px;
               }
@@ -172,7 +200,7 @@
           height: 300px;
         }
         &:first-child{
-          height: 670px;  
+          height: 850px;  
             .single_post__main_picture{
               height: 350px;
             }
@@ -189,7 +217,7 @@
             height: 400px;
           }
           &:first-child{
-            height: 750px;  
+            height: 880px;  
               .single_post__main_picture{
                 height: 450px;
               }
@@ -210,7 +238,7 @@
           height: 300px;
         }
         &:first-child{
-            height: 650px;
+            height: 840px;
             .single_post__main_picture{
               height: 300px;
             }
@@ -227,7 +255,7 @@
           height: 250px;
         }
         &:first-child{
-            height: 700px;
+            height: 1000px;
             .single_post__main_picture{
               height: 250px;
             }

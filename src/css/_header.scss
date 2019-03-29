@@ -115,6 +115,7 @@
 		}
 	}
 	.header--toggled {
+		z-index: 99;
 		transform: translateY(0);
 		.menu {
 			&__toggle {

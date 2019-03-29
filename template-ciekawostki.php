@@ -3,7 +3,6 @@
  * Template Name: Ciekawostki
  * Template Post Type: ciekawostki
  */
-  
  get_header();  ?>
 <section class="single_post_template">
 	<div class="single_post_template__baner">

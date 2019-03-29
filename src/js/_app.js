@@ -18,8 +18,6 @@ jQuery(document).ready(function ($) {
 		$("body").toggleClass('body--toggled');
 	});
 
-	$("body").addClass('loaded');
-	console.log("https://websitestyle.pl - Strony internetowe - zapraszamy na rozmowę rekrutacyjną :)");
 
 
 	$('*[data-animate]').addClass('hide').each(function () {
@@ -42,17 +40,15 @@ let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-	const slides = document.getElementsByClassName("slieds");
+	const slides = document.getElementsByClassName("slides");
 	for (let i = 0; i < slides.length; i++) {
 		slides[i].style.display = "none";
 	}
 	slideIndex++;
 	if (slideIndex > slides.length) { slideIndex = 1 }
 	slides[slideIndex - 1].style.display = "block";
-	setTimeout(showSlides, 20000); 
+	setTimeout(showSlides, 3500); 
 };
-
-
 
 /**
  *
@@ -63,14 +59,14 @@ function showSlides() {
 	var map;
     function initMap() {
       map = new google.maps.Map(document.getElementById('map'), {
-			center: { lat: 54.737364, lng: 18.832070 },
-			zoom: 9,
+				center: { lat: 54.7179000, lng: 18.4084100 },
+			zoom: 10,
 			styles: [
 				{
 					"elementType": "geometry",
 					"stylers": [
 					{
-						"color": "#f5f5f5"
+						"color": "#000"
 					}
 					]
 				},
@@ -193,7 +189,7 @@ function showSlides() {
 					"elementType": "geometry",
 					"stylers": [
 					{
-						"color": "#e5e5e5"
+						"color": "#fff"
 					}
 					]
 				},
