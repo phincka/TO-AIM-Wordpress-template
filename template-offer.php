@@ -37,6 +37,6 @@ get_header(); ?>
 		</div>
 	</section>
 	<div id="map"></div>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcRb8Hf3A9GfA3rNXPnSHOfRh5sKct6VM&callback=initMap" async defer></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key={YOUR_API_KEY}&callback=initMap" async defer></script>
 <?php
 get_footer();
