@@ -1,10 +1,13 @@
-.sidebar{
+.aside{
     width: 25%;
     margin-top: 60px;
     float: right;
     padding: 5px;
     @include fontStyle($mainColor, 1.2rem, 400, left);
     line-height: 22px;
+        .textwidget{
+            text-align: center;
+        }
         h3{
             @include fontStyle($secondary, 1.8rem, 700, center);
             padding: 50px 10px 30px 0;
@@ -20,13 +23,13 @@
         }
 }
 @media screen and (max-width: $desktop) {
-    .sidebar{
+    .aside{
         width: 20%;
         margin-right: 50px;
     }
 }
 @media screen and (max-width: $laptop) {
-    .sidebar{
+    .aside{
         display: none;
     }
 }

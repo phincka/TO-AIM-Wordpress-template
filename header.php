@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137355174-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-137355174-1');
+	</script>
+
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<?php $title = (get_field('title-seo')) ? get_field('title-seo') : get_bloginfo('title'); ?>
@@ -29,6 +38,8 @@
 	<!-- wp -->
 	<?php wp_head(); ?>
 	<!-- wp -->
+
+
 </head>
 
 <body <?php body_class(); ?>>

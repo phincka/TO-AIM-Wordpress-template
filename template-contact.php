@@ -9,7 +9,7 @@ get_header(); ?>
         <div class="contact_section__description">
             <div class="contact_section__description--text">
                 <div data-animate="fadeIn"><?php echo the_field('contact_description'); ?></div>
-                <div class="contact_section__contact_list">
+                <address class="contact_section__contact_list">
                     <h2 data-animate="slideInRight"><?php echo the_field('contact_forms_title') ?></h2>
                         <?php
                             if( have_rows('contact_forms') ):
@@ -31,7 +31,7 @@ get_header(); ?>
                                             <a target="_blank" href="<?php echo the_sub_field('contact_link'); ?>"><?php echo the_sub_field('contact_name'); ?></a>
                                         </div>
                                     <?php endif; endwhile; else : endif; ?>
-                </div>
+                </address>
             </div>
                 <div data-animate="slideInRight" class="contact_section__description--picture"><img src="<?php echo the_field('contact_picture');?>" alt="Contact picture"></div>  
             </div>

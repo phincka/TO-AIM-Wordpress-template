@@ -64,19 +64,13 @@
 				&--offer_list{
 						ul{
 							padding-bottom: 50px;
-							list-style: none;
+							margin: 20px 0 0 40px;
+							list-style: disc;
 								li{
-									margin-bottom: 0px;
 									@include fontStyle($mainColor, 1.2rem, 400, left);
-										&::before{
-											display: inline-block;
+									margin-bottom: 10px;
+										&:hover{
 											color: $secondary;
-											content: "\2022"; 
-											font-size: 2.5rem; 
-											position: relative;
-											z-index: -1;
-											top: 7px;
-											padding: 0 10px;
 										}
 								}
 						}

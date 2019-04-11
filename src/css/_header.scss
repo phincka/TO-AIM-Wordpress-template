@@ -14,6 +14,7 @@
 				display: block;
 				margin: 0 auto;
 				padding: 20px 0 20px 0;
+				background-color: #fff;
 			}
 			&__nav{
 				text-align: center;
@@ -47,6 +48,7 @@
 		top: 0;
 		background-color: #fff;
 		padding: 10px 0;
+		z-index: 99;
   }
 	.header__branding{
 		@include center();
@@ -147,8 +149,6 @@
 @media screen and (max-width: $minPhone) {
 	.header{
 		padding: 0;
-	}
-	.header__branding{
 	}
 	.menu__toggle {
 		$size: 20px;

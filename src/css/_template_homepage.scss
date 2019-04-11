@@ -16,6 +16,7 @@
               position: relative;
           }
           &--title{
+            width: 100%;
             margin-top: -50px;
             padding: 30px;
             background-color: $secondary;
@@ -33,7 +34,7 @@
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 4s;
+  animation-duration: 1.5s;
 }
 @-webkit-keyframes fade {
   from {opacity: .4} 
@@ -55,6 +56,7 @@
             img{
               width: 100%;
               height: 100%;
+              object-fit: cover;
             } 
         }
         &__title{
@@ -255,7 +257,7 @@
           height: 250px;
         }
         &:first-child{
-            height: 1000px;
+            height: 900px;
             .single_post__main_picture{
               height: 250px;
             }

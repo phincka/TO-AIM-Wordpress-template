@@ -20,9 +20,9 @@ get_header();
 		<?php endwhile; endif;?>
 	</section>
 <div class="row">					
-	<section class="sidebar">
+	<aside class="aside">
 		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar(1)): ?><h5>Nie odnaleziono widgetu.</h5><?php endif;?>                            
-	</section>
+	</aside>
 	<section class="posts">
 		<?php 
 		$paged = ( get_query_var( 'page' ) ) ? get_query_var( 'page' ) : 1;
