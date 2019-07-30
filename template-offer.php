@@ -4,7 +4,8 @@
  * @package ths
  */
 get_header(); ?>
-	<section class="offer">
+
+	<article class="offer">
 		<div class="offer__map_section--title">
 			<div data-animate="slideInLeft">
 				<h2>Znajdziesz nas w</h2>
@@ -35,8 +36,8 @@ get_header(); ?>
 					</div>
 			</div>
 		</div>
-	</section>
+	</article>
 	<div id="map"></div>
-		<script src="https://maps.googleapis.com/maps/api/js?key={YOUR_API_KEY}&callback=initMap" async defer></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key={API_KEY}&callback=initMap" async defer></script>
 <?php
 get_footer();

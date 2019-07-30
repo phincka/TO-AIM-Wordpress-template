@@ -7,23 +7,12 @@ get_header();
 ?>
 
 <div class="grid">
-	<section class="slider">
-		<?php
-			if( have_rows('home_slider') ):
-			while ( have_rows('home_slider') ) : the_row(); 
-		?>	
-		<div class="slider__single_element slides fade " >
-			<div class="slider__single_element--picture" style="background-image: url('<?php echo the_sub_field('home_curiosities_picture'); ?>');">
-					<h2 class="slider__single_element--title"><a href="<?php echo the_sub_field('home_curiosities_link'); ?>"><?php echo the_sub_field('home_curiosities_title'); ?></a></h2>
-			</div>
-		</div>
-		<?php endwhile; endif;?>
-	</section>
+	<?php get_template_part('slider'); ?>
 <div class="row">					
 	<aside class="aside">
 		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar(1)): ?><h5>Nie odnaleziono widgetu.</h5><?php endif;?>                            
 	</aside>
-	<section class="posts">
+	<article class="posts">
 		<?php 
 		$paged = ( get_query_var( 'page' ) ) ? get_query_var( 'page' ) : 1;
 		$args = array(
@@ -50,5 +39,5 @@ get_header();
 			} ?>			
 		<?php endif; ?>
 		<?php wp_reset_query(); ?>
-	</section>
+	</article>
 <?php get_footer();
